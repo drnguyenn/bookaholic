@@ -15,7 +15,7 @@ class CommentBox extends Component {
     };
   }
 
-  onStarClick = (nextValue) => {
+  onStarClick = (nextValue, prevValue, name) => {
     this.setState({ rating: nextValue });
   };
 
@@ -36,6 +36,7 @@ class CommentBox extends Component {
           <Col>
             <StarRatingComponent
               className='rating'
+              name='book-rating-comment-box'
               starCount={10}
               value={this.state.rating}
               emptyStarColor='#ccc'
@@ -46,9 +47,9 @@ class CommentBox extends Component {
         <Row>
           <Col>
             <div className='input-group mb-3'>
-              <div class='input-group-append send-button'>
+              <div className='input-group-append send-button'>
                 <button
-                  class='btn btn-link'
+                  className='btn btn-link'
                   type='button'
                   onClick={(e) =>
                     this.enterComment(e, this.state.rating, this.state.comment)
