@@ -21,11 +21,14 @@ class ReviewModal extends Component {
     this.setState({ show: !this.state.show });
   };
 
-  onComment = (e, rat, com) => {
+  onComment = (e, rating, comment) => {
     e.preventDefault();
-    if (rat !== 0) {
+    if (rating !== 0) {
       this.setState({
-        reviews: [...this.state.reviews, { rating: rat, comment: com }],
+        reviews: [
+          ...this.state.reviews,
+          { id: this.state.reviews.length + 1, comment, rating },
+        ],
       });
     }
   };
