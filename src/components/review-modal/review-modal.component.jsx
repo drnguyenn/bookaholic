@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { Container, Col, Modal, Image, Row } from "react-bootstrap";
 import BookCard from "../book-card/book-card.component";
-import CommentBox from "../comment-box/comment-box.component";
+import CommentList from "../comment-list/comment-list.component";
 
 import "./review-modal.styles.scss";
 
@@ -64,7 +64,7 @@ class ReviewModal extends Component {
                   </Row>
                   <Row>
                     <Col>
-                      <CommentBox />
+                      <CommentList bookId={this.props.book.book_id} />
                     </Col>
                   </Row>
                 </Col>
