@@ -1,25 +1,18 @@
 import React from 'react';
 
-import { Card, Button, Col } from 'react-bootstrap';
-
-import { SendOutlined } from "@ant-design/icons";
-import StarRatingComponent from "react-star-rating-component";
+import StarRatingComponent from 'react-star-rating-component';
 
 import './comment.styles.scss';
 
-const Comment = ({
-  comment: { book_id, rating, comment}
-}) => (
-  <div className="border rounded p-2 mb-2">
+const Comment = ({ review: { rating, comment } }) => (
+  <div className='border rounded p-2 mb-2'>
     <StarRatingComponent
-      className="rating"
+      className='rating'
       starCount={10}
       value={rating}
-      emptyStarColor="#ccc"
+      emptyStarColor='#ccc'
     />
-    <div className="mt-n3">
-      {comment}
-    </div>
+    <div className='mt-n3'>{comment}</div>
   </div>
 );
 

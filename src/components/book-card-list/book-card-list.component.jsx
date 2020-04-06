@@ -9,7 +9,7 @@ const BookCardList = (props) => {
   return (
     <div className='book-card-list'>
       {props.books.map((book) => (
-        <LazyLoad once>
+        <LazyLoad once key={book.book_id}>
           <ReviewModal key={book.book_id} book={book} />
         </LazyLoad>
       ))}
