@@ -22,9 +22,9 @@ class App extends Component {
   handleChange = (e) => this.setState({ searchField: e.target.value });
 
   render() {
-    const { books, searchField } = this.state;
+    const { searchField } = this.state;
 
-    const filteredBooks = books.filter((book) =>
+    const filteredBooks = this.state.books.filter((book) =>
       book.original_title.toLowerCase().includes(searchField.toLowerCase())
     );
 
