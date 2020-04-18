@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e57511b7db4f42414dd7f831813bd942",
+    "revision": "0fe5a90902d4369b881a6dbaa56898a9",
     "url": "/bookaholic/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bookaholic/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "5d66c1de570341aa69ae",
+    "revision": "1d9aaa2480408aa66743",
     "url": "/bookaholic/static/css/main.f18f3a29.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bookaholic/static/js/2.120b9595.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5d66c1de570341aa69ae",
-    "url": "/bookaholic/static/js/main.9a467e2b.chunk.js"
+    "revision": "1d9aaa2480408aa66743",
+    "url": "/bookaholic/static/js/main.3f7177c2.chunk.js"
   },
   {
     "revision": "f4973732fbea60683881",
