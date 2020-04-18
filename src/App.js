@@ -14,7 +14,6 @@ class App extends Component {
     super(props);
 
     this.state = {
-      books: BOOKS_DATA,
       searchField: '',
     };
   }
@@ -24,7 +23,7 @@ class App extends Component {
   render() {
     const { searchField } = this.state;
 
-    const filteredBooks = this.state.books.filter((book) =>
+    const filteredBooks = BOOKS_DATA.filter((book) =>
       book.original_title.toLowerCase().includes(searchField.toLowerCase())
     );
 
